@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>The Roll Initiative</title>
+</head>
+
+<body>
+    <main>
+        <h1>The Roll Initiative</h1>
+        <form>
+            <label for="chooseDie">Choose die:</label>
+            <select id="chooseDie">
+                <option value="4">d4</option>
+                <option value="6">d6</option>
+                <option value="8">d8</option>
+                <option value="10">d10</option>
+                <option value="12">d12</option>
+                <option value="20" selected="selected">d20</option>
+                <option value="100">d100</option>
+            </select>
+        </form>
+        <button id="roll">Roll</button>
+        <form>
+            <label for="number">Number:</label>
+            <input id="number" type="number" max="9" />
+        </form>
+        <button id="saveNum">Save</button>
+        <form>
+            <label for="initiative">Initiative:</label>
+            <input id="initMod" type="number" max="9" />
+        </form>
+        <button id="rollInit">Roll Initiative</button>
+        <h3 id="showNum"></h3>
+    </main>
+    <script src="js/roll.js"></script>
+</body>
+
+</html>
