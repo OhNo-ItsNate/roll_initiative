@@ -51,6 +51,15 @@ document.querySelector('#attack').addEventListener("focusout", function() {
 //DISPLAYS ATTACK VALUE
 document.querySelector('#attack').value = localStorage.attNum;
 
+//REMEMBER DIE CHOSEN BY USER
+document.querySelector('#chooseDie').addEventListener("focusout", function() {
+    localStorage.setItem('chosenDie', document.querySelector('#chooseDie').value);
+    console.log(localStorage.chosenDie);
+});
+
+//DISPLAY STORED DIE CHOICE
+document.querySelector("#chooseDie").value = localStorage.chosenDie;
+
 //EVENT LISTENER TO TAKE ATTACK VALUE, TURN IT INTO AM INTEGER, AND ADD IT TO A DIE CHOSEN AND ROLLED BY USER
 document.querySelector('#rollAtt').addEventListener("click", function() {
     let attack = parseInt(localStorage.attNum);
