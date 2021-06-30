@@ -8,7 +8,20 @@
 <body>
     <main>
         <h1>The Roll Initiative</h1>
+
         <form>
+            <label for="initMod">Initiative:</label>
+            <input id="initMod" type="number" max="9" />
+        </form>
+        <button id="rollInit">Roll Initiative</button>
+        <form>
+            <label for="hitDC">Hit/DC:</label>
+            <input id="hitDC" type="number" max="9" />
+        </form>
+        <button id="rollHit">Roll Hit</button>
+        <form>
+            <label for="attack">Bonus to Damage:</label>
+            <input id="attack" type="number" max="9" />
             <label for="chooseDie">Choose die:</label>
             <select id="chooseDie">
                 <option value="4">d4</option>
@@ -20,19 +33,7 @@
                 <option value="100">d100</option>
             </select>
         </form>
-        <button id="roll">Roll</button>
-        <span style="visibility: hidden;">
-        <form>
-            <label for="number">Number:</label>
-            <input id="number" type="number" max="9" />
-        </form>
-        <button id="saveNum">Save</button>
-        </span>
-        <form>
-            <label for="initiative">Initiative:</label>
-            <input id="initMod" type="number" max="9" />
-        </form>
-        <button id="rollInit">Roll Initiative</button>
+        <button id="rollAtt">Roll Attack</button>
         <h3 id="showNum"></h3>
     </main>
     <script src="js/roll.js"></script>
