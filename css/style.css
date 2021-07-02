@@ -10,6 +10,7 @@ p,
 form,
 label,
 input,
+select,
 button {
     font-size: 2vh;
 }
