@@ -1,0 +1,14 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p,
+form,
+label,
+button {
+    font-size: 1rem;
+}
